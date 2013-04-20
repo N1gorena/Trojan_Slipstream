@@ -12,6 +12,7 @@ When the start button is pressed, the player will spawn and begin "moving" to th
  moving only in the sense that the entire screen is flowing to the left. Clouds will also spawn randomly in middle section of the screen and be given random
  motion.  If the pause button is pressed, all enemies, projectiles and objects will freeze for the time being. Using the keyboard buttons will move the player
  within the screen, and clicking the mouse will fire player projectiles. When the game ends, everything will be cleaned from the screen and reset so a start button press restarts the game.
+ The Quit button will function the same as the game ending, but not closing the window itself.
 	______________________________________________________________________________________________
 	| /_s_t_a_r_t\    /_p_a_u_s_e\  /Q_u_i_t\           lives: x              score:x            |
 	|--------------------------------------------------------------------------------------------|
