@@ -12,7 +12,6 @@ When the start button is pressed, the player will spawn and begin "moving" to th
  moving only in the sense that the entire screen is flowing to the left. Clouds will also spawn randomly in middle section of the screen and be given random
  motion.  If the pause button is pressed, all enemies, projectiles and objects will freeze for the time being. Using the keyboard buttons will move the player
  within the screen, and clicking the mouse will fire player projectiles. When the game ends, everything will be cleaned from the screen and reset so a start button press restarts the game.
- The Quit button will function the same as the game ending, but not closing the window itself.
 	______________________________________________________________________________________________
 	| /_s_t_a_r_t\    /_p_a_u_s_e\  /Q_u_i_t\           lives: x              score:x            |
 	|--------------------------------------------------------------------------------------------|
@@ -42,9 +41,9 @@ When the start button is pressed, the player will spawn and begin "moving" to th
 	----------------------------------------------------------------------------------------------
 
 Images are added inline by using the following syntax
-(http://t2.gstatic.com/images?q=tbn:ANd9GcT_9tdxTsJIx_LCRhG2hm7l5nhno9ATp8fzYZ18pn_JBIDMAdHzJSOaAg "Bomb")
-(http://www.gsx.com/Portals/38080/images/cloud.gif "cloud")
-(http://t0.gstatic.com/images?q=tbn:ANd9GcSWMrKKdnLKXzRC_qBGjuyr_a7it7leUmrnEqoULVs5BrtXafwk "plane")
-(http://t2.gstatic.com/images?q=tbn:ANd9GcTW6ZSU3K5hqvb-TwpyuDQWZ7H7SaO-wKzlYwCPhe1wDaK0Q9x1dA "Bullet")
-(http://t1.gstatic.com/images?q=tbn:ANd9GcRoUXqRkjUhhcZohaOxWrbCEQdbXK8QJPLm4xd9YKyOaZb7oh4zJw "missile")
+![alt text](http://t2.gstatic.com/images?q=tbn:ANd9GcT_9tdxTsJIx_LCRhG2hm7l5nhno9ATp8fzYZ18pn_JBIDMAdHzJSOaAg "Bomb")
+![alt text](http://www.gsx.com/Portals/38080/images/cloud.gif "cloud")
+![alt text](http://t0.gstatic.com/images?q=tbn:ANd9GcSWMrKKdnLKXzRC_qBGjuyr_a7it7leUmrnEqoULVs5BrtXafwk "plane")
+![alt text](http://t2.gstatic.com/images?q=tbn:ANd9GcTW6ZSU3K5hqvb-TwpyuDQWZ7H7SaO-wKzlYwCPhe1wDaK0Q9x1dA "Bullet")
+![alt text](http://t1.gstatic.com/images?q=tbn:ANd9GcRoUXqRkjUhhcZohaOxWrbCEQdbXK8QJPLm4xd9YKyOaZb7oh4zJw "missile")
 
