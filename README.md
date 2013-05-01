@@ -1,12 +1,12 @@
 # Game - Programming Assignments Private Repository
 ### Student Information
-  + Name: Tommy Trojan
-  + USC Email: ttrojan@usc.edu
-  + USC ID: 0123456789
+  + Name: Nicolas Guangorena
+  + USC Email: guangore@usc.edu
+  + USC ID: 6891836061
 
 ### Game Information
-  + Game Name: myAwsomeGame
-  + Game Description: One sentence game description
+  + Game Name: Slipstream
+  + Game Description: The most evasive jet fighter has been deployed, and its your job to keep it alive.
   + [Game Design Doc](GameDesignDoc.md)
 
 
@@ -14,12 +14,13 @@
 The grader should use the following procedure to compile and run the code:
 ```shell
 #Compile Instructions
-echo "Write command here"
+echo "qmake -project"
+echo "qmake"
+echo "make"
 #Doxygen Instructions
-echo "Write command here"
+echo "doxygen -g config.txt"
+echo "doxygen config.txt"
 #Command to run
-echo "Write command here"
+echo "./game_guangore"
 ```
 
-### Screenshots -- [Optional]
-You can either remove this section or add screenshots if you wish.
