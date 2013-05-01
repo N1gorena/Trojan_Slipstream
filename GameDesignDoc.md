@@ -44,7 +44,7 @@ A cloud will also spawn in the middle section of the screen and move randomly gi
 	|											     |
 	----------------------------------------------------------------------------------------------
 
-Images are added inline by using the following syntax
+Images for the various items
 + [Bomb](images/mine.png)
 + [Player Jet](images/playerjet.png)
 + [Enemy Jet](images/ejet.png)
@@ -52,10 +52,3 @@ Images are added inline by using the following syntax
 + [background](images/background.jpg)
 + [missile](images/missile.jpg)
 + [bullet](images/bullet.png)
-![alt text](http://www.gsx.com/Portals/38080/images/cloud.gif "cloud")
-![alt text](http://t0.gstatic.com/images?q=tbn:ANd9GcSWMrKKdnLKXzRC_qBGjuyr_a7it7leUmrnEqoULVs5BrtXafwk "plane")
-![alt text](http://t2.gstatic.com/images?q=tbn:ANd9GcTW6ZSU3K5hqvb-TwpyuDQWZ7H7SaO-wKzlYwCPhe1wDaK0Q9x1dA "Bullet")
-![alt text](http://t1.gstatic.com/images?q=tbn:ANd9GcRoUXqRkjUhhcZohaOxWrbCEQdbXK8QJPLm4xd9YKyOaZb7oh4zJw "missile")
-
-![backround](http://t3.gstatic.com/images?q=tbn:ANd9GcSEZ8RvcQLURtRQBWMvtjgKZyM5WR7wZu8RVpuh6Bny3WrGeCmyaQ "background")
-

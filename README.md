@@ -21,6 +21,6 @@ echo "make"
 echo "doxygen -g config.txt"
 echo "doxygen config.txt"
 #Command to run
-echo "./game_guangore"
+echo "./( git repo/folder name here)"
 ```
 
