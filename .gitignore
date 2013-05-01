@@ -44,3 +44,7 @@ pjet.cpp~
 pjet.h~
 score.cpp~
 score.h~
+config.txt
+html/
+latex/
+Makefile
