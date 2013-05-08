@@ -357,7 +357,7 @@ void MainWindow::tick_of_the_clock()
 			game->moveBomb(temp,temp1,level );
 			level++;
 		}
-		game->levelUp();
+		game->levelUp(0);
 		
 	}
 	binflight = true;
@@ -449,6 +449,7 @@ void MainWindow::tick_of_the_clock()
 		dead = false;
 		deadtime = 0;
 		ticks = 501;
+		game->levelUp(1);
 		
 	}
 }

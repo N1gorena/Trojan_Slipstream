@@ -91,9 +91,10 @@ public:
     /** the graphics view displaying the scene */
    QGraphicsView *view; 
    /** function to level up by changing background*/
-   void levelUp();
+   void levelUp(bool reset);
 private:
-	/** int to indicate swap between 3 backgrounds for level swap */
+	/** int to indicate swap between 3 backgrounds for level swap
+	@param reset tells whether to set back to original background or not */
 	int level;
 	/** Top Level widget housing the rest of the widgets */
 	QWidget* top_level;
