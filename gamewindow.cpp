@@ -32,7 +32,7 @@ GameWindow::GameWindow()
 	view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 	view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-
+	level = 0;
 
 
 }
@@ -42,6 +42,35 @@ GameWindow::~GameWindow()
 	delete background;
 	delete view;
 	
+	
+}
+void GameWindow::levelUp()
+{	
+	level++;
+	if(level == 1)
+	{
+		QPixmap image("images/grayback.jpg");
+		background = new QBrush(image);
+		top_scene->setBackgroundBrush( *background );
+		
+	}
+	else if(level == 2)
+	{
+		QPixmap image("images/redback.jpg");
+		background = new QBrush(image);
+		top_scene->setBackgroundBrush( *background );
+	}
+	else if(level == 3)
+	{
+		QPixmap image("images/background.jpg");
+		background = new QBrush(image);
+		top_scene->setBackgroundBrush( *background );
+	}
+	
+	if( level == 3)
+	{
+		level = 0;
+	}
 	
 }
 void GameWindow::show()

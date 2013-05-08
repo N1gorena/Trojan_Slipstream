@@ -37,6 +37,14 @@ class score : public QWidget
 	@param num Number to be set
 	*/
 	void setScore( int num);
+	/** function to return the score 
+	@return the int value held in the LCD display
+	*/
+	int getScore();
+	/** function to return label
+	@return returns the player name
+	*/
+	QString getLabel();
 	/* function to return a bool of whether the scoreboard is all prepped
 	@return returns true when a name has been entered and set
 	*/

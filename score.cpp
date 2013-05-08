@@ -66,7 +66,7 @@ score::~score()
 }*/
 void score::name()
 {
-	QString name = nombre->text() + " Score:";
+	QString name = nombre->text() + "'s Score:";
 	Points->setText( name);
 	nombre->hide();
 	boardlayout->removeWidget( nombre );
@@ -76,6 +76,15 @@ void score::name()
 void score::setScore(int num)
 {
 	Score->display(num);
+}
+int score::getScore()
+{
+	return Score->intValue();
+}
+QString score::getLabel()
+{
+	return Points->text();
+
 }
 bool score::Set()
 {

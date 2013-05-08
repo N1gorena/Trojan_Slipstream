@@ -1,7 +1,9 @@
 #include "mainwindow.h"
 #include<QLabel>
 #include<QPicture>
+#include<sstream>
 #include<iostream>
+#include<fstream>
 #include<QTextEdit>
 #include<QFormLayout>
 #include<QLineEdit>
@@ -16,6 +18,10 @@
 #include<QStringList>
 #include<QKeyEvent>
 #include<QProgressBar>
+#include<string>
+
+
+
 int maxhp = 3;
 int velx =  2;
 int vely = 3;
@@ -351,28 +357,10 @@ void MainWindow::tick_of_the_clock()
 			game->moveBomb(temp,temp1,level );
 			level++;
 		}
+		game->levelUp();
 		
 	}
-	//player
-	/*
-	game->moveJet(pjetx,pjety);
-	if(pjetx < -5)
-	{
-	pjetx++;
-	}
-	else
-	{
-	pjetx = -750;
-	}
-	*/
-	//enemy bullet
-	/*if(ticks == 560 )
-	{
-	game->enemyfire();
-	bulletx = ejetx;
-	bullety = ejety;
-	
-	}*/binflight = true;
+	binflight = true;
 	if(ticks%(500/level) == 0  )
 	{
 		
@@ -454,6 +442,7 @@ void MainWindow::tick_of_the_clock()
 	if( hp == 0)
 	{
 		Master->stop();
+		score_out();
 		paused = false;
 		begun = false;
 		game->reset();
@@ -543,10 +532,97 @@ void MainWindow::keyPressEvent(QKeyEvent* event)
 		}
 	}
 }
-/*void MainWindow::Named()
+void MainWindow::score_out()
 {
-	namedone = 1;
-	count->setName(name->text() );
-	//Start_Game->show();
-	name->hide();
-}*/
+	
+	std::ofstream scorelist;
+	scorelist.open("highscores.txt", std::ios::app);
+	int sco = count->getScore();
+	QString temp = count->getLabel();
+	std::string hell = temp.toStdString();
+	scorelist << hell << " " << sco << std::endl;
+	
+	scorelist.close();
+	std::ifstream fixlist("highscores.txt");
+	char lim[] = ":";
+	std::vector<std::string> names;
+	std::vector<int> numbs;
+	while( fixlist.good() )
+	{
+		if(fixlist.good())
+		{
+		std::string yo;
+		std::stringstream temp;
+		getline( fixlist,yo,lim[0]);
+		yo = yo + ": ";
+		names.push_back( yo);
+		std::string t;
+		getline(fixlist, t);
+		temp << t;
+		int go;
+		temp >> go;
+		numbs.push_back( go);
+		}
+	}
+	
+	
+	fixlist.close();
+	numbs.pop_back();
+	names.pop_back();
+	scorelist.open("highscores.txt");
+	int max = numbs[0];
+	int place = 0;
+	int curr;
+		
+		for(unsigned int y = 0; y < numbs.size() ; y++)
+		{
+			if(   max < numbs[y] )
+			{
+				max = numbs[y];
+				place = y;
+			}	
+		}
+		std::stringstream terp;
+		scorelist << names[place];
+		terp <<  numbs[place] << std::endl;
+		std::string tran;
+		terp >> tran;
+		scorelist << tran << std::endl;
+		
+		for(unsigned int x = 0; x < 5 ; x++)
+		{
+			curr = numbs[x];
+			if(curr > max)
+			{
+				curr = 0;
+			}
+			place = x;
+			if(curr != max){
+				for(unsigned int y = 0; y < numbs.size()  ; y++)
+				{
+					if( curr < numbs[y] && numbs[y] < max)
+					{
+						curr = numbs[y];
+						place = y;
+					}
+				}
+				if(curr != 0){
+					std::stringstream tep;
+					scorelist << names[place];
+					tep <<  numbs[place] << std::endl;
+					std::string tray;
+					tep >> tray;
+					scorelist << tray << std::endl;
+					max = curr;
+				}	
+			}
+		}
+		
+	
+		 
+	
+	
+	
+
+	
+}

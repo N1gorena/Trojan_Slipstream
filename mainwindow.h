@@ -37,6 +37,8 @@ public:
     void show();
     /** overloaded function to take in key presses for the game */
     void keyPressEvent(QKeyEvent* event);
+    /** function to output the score to a highscores list txt file*/
+    void score_out();
    
 private:
 	/** layout to attach to "this" top level widget */

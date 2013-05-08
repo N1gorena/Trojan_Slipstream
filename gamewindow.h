@@ -90,8 +90,11 @@ public:
     bool collision();
     /** the graphics view displaying the scene */
    QGraphicsView *view; 
+   /** function to level up by changing background*/
+   void levelUp();
 private:
-	
+	/** int to indicate swap between 3 backgrounds for level swap */
+	int level;
 	/** Top Level widget housing the rest of the widgets */
 	QWidget* top_level;
 	/** Top Level scene housing the items */
