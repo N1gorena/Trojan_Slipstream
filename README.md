@@ -8,10 +8,11 @@
   + Game Name: Slipstream
   + Game Description: The most evasive jet fighter has been deployed, and its your job to keep it alive.
   + [Game Design Doc](GameDesignDoc.md)
+  + [License](LICENSE)
 
 
 ### Compile & Run Instructions
-The grader should use the following procedure to compile and run the code:
+The user should use the following procedure to compile and run the code:
 ```shell
 #Compile Instructions
 echo "qmake -project"
