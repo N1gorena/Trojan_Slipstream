@@ -23,5 +23,9 @@ echo "doxygen -g config.txt"
 echo "doxygen config.txt"
 #Command to run
 echo "./( git repo/folder name here)"
+#To Play
+echo "use wasd and qezc keys to move"
+echo "enter name in designated location then press start"
 ```
+
 
