@@ -1,5 +1,5 @@
-# Game - Programming Assignments Private Repository
-### Student Information
+# Game - Repository for a Qt based game
+### Programmer Information
   + Name: Nicolas Guangorena
   + USC Email: guangore@usc.edu
   + USC ID: 6891836061
