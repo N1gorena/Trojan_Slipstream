@@ -589,11 +589,7 @@ void MainWindow::score_out()
 		std::string tran;
 		terp >> tran;
 		scorelist << tran << std::endl;
-		int check = numbs.size();
-		if( check >= 5 )
-		{
-			check = 5;
-		}
+		int check = numbs.size();if( check >= 5 ){check = 5;}
 		for(unsigned int x = 0; x < check ; x++)
 		{
 			curr = numbs[x];
